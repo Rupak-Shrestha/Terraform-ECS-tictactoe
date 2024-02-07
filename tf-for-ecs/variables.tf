@@ -7,17 +7,6 @@ variable "aws_region" {
   default     = "ca-central-1a" # Default value for the variable
 }
 
-# Define sensitive variables for AWS access key and secret key
-variable "aws_access_key" {
-  type      = string # Type of the variable
-  sensitive = true   # Marked as sensitive to hide its value in logs
-}
-
-variable "aws_secret_key" {
-  type      = string # Type of the variable
-  sensitive = true   # Marked as sensitive to hide its value in logs
-}
-
 # Define a variable for VPC CIDR block
 variable "vpc_cidr" {
   description = "CIDR block for main" # Description of the variable
