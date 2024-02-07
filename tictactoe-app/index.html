@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Tic-Tac-Snow - Snowpark Container Services</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Logo container -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+    </div>    
+    <!-- Player selection -->
+    <div>
+        <label for="playerType">Play against:</label>
+        <select id="playerType" class="player-select" onchange="changePlayerType()">
+            <option value="human">Human</option>
+            <option value="computer">Computer</option>
+        </select>
+    </div><br>
+    <!-- Game board -->
+    <div class="board" id="board">
+        <!-- Cells of the board -->
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <!-- Game status -->
+    <div class="status" id="status">Player X's turn</div>
+    <!-- Restart button -->
+    <button class="restart-btn" onclick="restartGame()">Restart Game</button>
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+

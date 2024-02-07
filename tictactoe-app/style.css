@@ -1,0 +1,111 @@
+/* CSS code */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f6f8;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100px; /* Adjust as needed */
+}
+
+/* Logo styling */
+.logo {
+    max-width: 100%; /* Ensure the logo doesn't exceed the container width */
+    max-height: 100%; /* Ensure the logo doesn't exceed the container height */
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Game board styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    border: 2px solid #2dbdee;
+    padding: 5px;
+    background-color: #0f4567;
+    border-radius: 10px;
+}
+
+/* Individual cell styling */
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    border: 2px solid #2dbdee;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    background: #3b7092;
+}
+
+/* Hover effect for cell */
+.cell:hover {
+    background-color: #259edc;
+}
+
+/* Active state for cell */
+.cell:active {
+    transform: scale(0.95);
+}
+
+/* Game status text styling */
+.status {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #259edc;
+}
+
+/* Restart button styling */
+.restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #259edc;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for restart button */
+.restart-btn:hover {
+    background-color: #259cda;
+}
+
+/* Player select dropdown styling */
+.player-select {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid #259cda;
+    border-radius: 5px;
+    background-color: #f2f3f4;
+}
+
+/* Marker styling */
+.marker {
+    font-weight: bold;
+    font-size: 72px;
+    color: #259edc;
+}
+
